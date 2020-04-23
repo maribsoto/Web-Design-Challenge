@@ -1,0 +1,69 @@
+/* In this doc we have displayed the most important styles used on our webpage design. 
+There are few styles displayed on the html documents that are specifically applicable 
+for individual cases*/
+body {
+    background: #aec1c488;
+}
+
+/* Navbar */
+.navbar {
+    max-height: 100px;
+  }
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .navbar {
+    background-color: white;
+    font-size: 20px;
+}
+
+.container {
+    margin-left: initial;
+}
+
+.container2 {
+    margin-left: auto;
+    text-align: left;
+}
+/* Headers*/
+h3{
+    font-weight: 700;
+}
+
+/* Paragraphs*/
+p {
+    color: rgb(22, 76, 90);
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+p1 {
+    color: rgb(20, 109, 121);
+    font-size: 21px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+p2 {
+    color: rgb(15, 94, 139);
+    font-size: 21px;
+    font-weight: 500;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+p3 {
+    color: rgb(15, 8, 109);
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  p4 {
+    color: rgb(12, 12, 15);
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }

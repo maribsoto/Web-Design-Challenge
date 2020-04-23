@@ -1,0 +1,153 @@
+<!-- Cloudiness html document -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Using Responsive Components from Bootstrap -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Components</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Navigation Bar definition  -->
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light" style="background-color: rgb(53, 170, 164);">
+        <a class="navbar-brand" href="index.html">Latitude: a Weather Study reaching the Equator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="Max_Temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Comparison.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Data.html">Data <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header>
+        <h2 style="color:rgb(17, 51, 163); text-indent: 12px; font-weight: 700;">Cloudiness</h2>
+        <hr>
+    </header>
+    <!-- Displaying our charts and analysis through Rows and Containers -->
+    <div class="container">
+        <!--Usually these medium columns go full wide on small screen sizes-->
+        <div class="mb-2"></div>
+        <div class="row">
+
+            <div class="col-md-7">
+
+                <figure id="Cloudiness">
+                    <!-- Main Page Caption-->
+                    <img src="Resources\assets\images\Fig3.png" alt="Cities Latitude vs Cloudiness"
+                        style="width:90%;height:90%" class="rounded">
+                </figure>
+
+            </div>
+            <div class="col-md-5">
+                <main class="container2">
+                    <!--Usually these medium columns go full wide on small screen sizes-->
+                    <div class="row">
+                        <br>
+                        <p1> Data dispersion is anomously high. Therefore, there is a very low or non existant
+                            correlation
+                            between Latitude and Cloudiness. We cannot stablish a corelation between both variables
+                            while we
+                            approach the Equator
+                        </p1>
+                        <br>
+                        <p2>The amount of Clouds in the sky is not driven by your proximity to the Equator!
+                        </p2>
+                        </br>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <hr>
+        <!-- Displaying our charts Visualizations through Rows and Containers -->
+        <div class="container3">
+            <h4 class="text-center" style='color:rgb(17, 71, 92); font-weight: 700' ;>Visualizations of Latitude</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <a href="Max_Temp.html">
+                            <img src="Resources\assets\images\Fig1.png" alt="City Latitude vs Max Temperature"
+                                class="img-thumbnail">
+                        </a>
+                    </div>
+                    <div class="caption">
+                        <h5 class="text-center" style="color:rgb(12, 73, 73)">Max Temperature</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail1; rounded">
+                        <a href="Humidity.html">
+                            <img src="Resources\assets\images\Fig2.png" alt="City Latitude vs Humidity"
+                                class="img-thumbnail">
+                        </a>
+                    </div>
+                    <div class="caption">
+                        <h5 class="text-center" style="color:rgb(12, 73, 73)">Humidity</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail2">
+                        <a href="Cloudiness.html">
+                            <img src="Resources\assets\images\Fig3.png" alt="City Latitude vs Cloudiness"
+                                class="img-thumbnail">
+                        </a>
+                    </div>
+                    <div class="caption">
+                        <h5 class="text-center" style="color:rgb(12, 73, 73)">Cloudiness</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail3">
+                        <a href="Wind_Speed.html">
+                            <img src="Resources\assets\images\Fig4.png" alt="City Latitude vs Wind Speed"
+                                class="img-thumbnail">
+                        </a>
+                    </div>
+                    <div class="caption">
+                        <h5 class="text-center" style="color:rgb(12, 73, 73)">Wind Speed</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+<footer style="font-size: 12px;font-weight: 600;">By: Maria Soto</footer>
+
+</html>
